@@ -17,7 +17,5 @@ public class loginPageTest extends BaseTest {
 		lp.enterPassword(config.password());
 		//click login option
 		lp.clickLogin();
-		
-		System.out.println("Dibyendu is your nmae");
 	}
 }
