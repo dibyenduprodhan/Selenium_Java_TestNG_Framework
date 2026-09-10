@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-09T20:55:07 IST" name="Default suite" finished-at="2026-09-09T20:55:09 IST" duration-ms="2476">
+  <suite started-at="2026-09-10T11:03:58 IST" name="Suite" finished-at="2026-09-10T11:04:00 IST" duration-ms="1142">
     <groups>
     </groups>
-    <test started-at="2026-09-09T20:55:07 IST" name="Default test" finished-at="2026-09-09T20:55:09 IST" duration-ms="2476">
+    <test started-at="2026-09-10T11:03:58 IST" name="alltestcases" finished-at="2026-09-10T11:04:00 IST" duration-ms="1142">
+      <class name="TestCases.SwagLabsPageTest">
+        <test-method signature="intenvoryTest()[pri:0, instance:TestCases.SwagLabsPageTest@1165b38]" started-at="2026-09-10T11:03:59 IST" name="intenvoryTest" finished-at="2026-09-10T11:03:59 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intenvoryTest -->
+        <test-method signature="selectLowestPriceItem()[pri:0, instance:TestCases.SwagLabsPageTest@1165b38]" started-at="2026-09-10T11:03:59 IST" name="selectLowestPriceItem" finished-at="2026-09-10T11:04:00 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLowestPriceItem -->
+      </class> <!-- TestCases.SwagLabsPageTest -->
       <class name="TestCases.loginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.loginPageTest@54d9d12d]" started-at="2026-09-09T20:55:07 IST" name="setup" finished-at="2026-09-09T20:55:08 IST" duration-ms="1762" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.loginPageTest@6025e1b6]" started-at="2026-09-10T11:03:57 IST" name="setup" finished-at="2026-09-10T11:03:58 IST" duration-ms="1778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginFunctionTest()[pri:0, instance:TestCases.loginPageTest@54d9d12d]" started-at="2026-09-09T20:55:08 IST" name="loginFunctionTest" finished-at="2026-09-09T20:55:09 IST" duration-ms="535" status="PASS">
+        <test-method signature="loginFunctionTest()[pri:0, instance:TestCases.loginPageTest@6025e1b6]" started-at="2026-09-10T11:03:59 IST" name="loginFunctionTest" finished-at="2026-09-10T11:03:59 IST" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFunctionTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.loginPageTest@54d9d12d]" started-at="2026-09-09T20:55:09 IST" name="tearDown" finished-at="2026-09-09T20:55:09 IST" duration-ms="151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- TestCases.loginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- alltestcases -->
+  </suite> <!-- Suite -->
 </testng-results>
