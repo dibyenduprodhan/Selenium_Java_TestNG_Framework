@@ -13,5 +13,6 @@ public class SwagLabsPageTest extends BaseTest {
         SwagLabsPage spage = new SwagLabsPage(driver);
 
         spage.addLowestPriceItemToCart();
+        System.out.println("All Testcases executed..");
     }
 }
