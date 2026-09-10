@@ -8,60 +8,37 @@ import org.openqa.selenium.WebElement;
 
 import BaseClass.BasePage;
 
-public class SwagLabsPage extends BasePage{
-	//constructor
-	public SwagLabsPage(WebDriver driver) {
-		super(driver);
-	}
-	
-	private By totalItems=By.xpath("//div[@class='inventory_item']");
-	private By itemNames=By.xpath("//div[@class='inventory_item_name ']");
-	private By itemsPrice=By.xpath("//div[@class='inventory_item_price']");
-	
-	
-	public List<WebElement> inventoryItems() {
-		return driver.findElements(totalItems);
-	}
-	
-	public List<WebElement> inventoryItemName() {
-		return driver.findElements(itemNames);
-	}
-	
-	public List<WebElement> inventoryItemPrice() {
-		return driver.findElements(itemsPrice);
-	}
-	//lowest price item
-	public WebElement getLowestPriceItem() {
+public class SwagLabsPage extends BasePage {
 
-	    List<WebElement> products = driver.findElements(
-	            By.className("inventory_item")
-	    );
+    public SwagLabsPage(WebDriver driver) {
+        super(driver);
+    }
 
-	    double lowestPrice = Double.MAX_VALUE;
-	    WebElement lowestItem = null;
+    private By totalItems = By.className("inventory_item");
+    private By itemPrice = By.className("inventory_item_price");
+    private By addToCartButton = By.className("btn_inventory");
 
-	    for (WebElement product : products) {
+    public void addLowestPriceItemToCart() {
 
-	        String priceText = product
-	                .findElement(By.className("inventory_item_price"))
-	                .getText();
+        List<WebElement> products = driver.findElements(totalItems);
 
-	        double price = Double.parseDouble(
-	                priceText.replace("$", "")
-	        );
+        double lowestPrice = Double.MAX_VALUE;
+        WebElement lowestItem = null;
 
-	        if (price < lowestPrice) {
-	            lowestPrice = price;
-	            lowestItem = product;
-	        }
-	    }
+        for (WebElement product : products) {
 
-	    return lowestItem;
-	}
+            String priceText = product.findElement(itemPrice).getText();
 
-	public WebElement getLowestPriceItem1() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+            double price = Double.parseDouble(
+                    priceText.replace("$", "")
+            );
 
+            if (price < lowestPrice) {
+                lowestPrice = price;
+                lowestItem = product;
+            }
+        }
+
+        lowestItem.findElement(addToCartButton).click();
+    }
 }

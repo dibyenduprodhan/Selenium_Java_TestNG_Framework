@@ -7,7 +7,6 @@
         <methods>
           <include name="setup"/>
           <include name="selectLowestPriceItem"/>
-          <include name="intenvoryTest"/>
         </methods>
       </class> <!-- TestCases.SwagLabsPageTest -->
     </classes>
