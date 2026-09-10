@@ -15,7 +15,7 @@ import Utilities.ConfigReader;
 public class BaseTest {
 	public static WebDriver driver;
 	//ref variable of ConfigReader class
-	protected ConfigReader config;
+	protected static ConfigReader config;
 	@BeforeSuite
 	public void setup() throws IOException {
 		driver=new ChromeDriver();
